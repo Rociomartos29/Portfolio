@@ -1,18 +1,22 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a mi Portfolio</h1>
+        <p>Soy desarrolladora iOS y estos son algunos de mis proyectos recientes:</p>
+    </header>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <section>
+        <h2>Proyectos</h2>
+        <ul>
+            <li><a href="https://nombre-usuario.github.io/2025-02-22-nomadnest">NomadNest 🌍✈️</a> - Una aplicación para nómadas digitales que planean sus viajes.</li>
+            <li><a href="https://nombre-usuario.github.io/2025-02-22-otro-proyecto">Otro Proyecto</a> - Descripción de otro proyecto.</li>
+        </ul>
+    </section>
+</body>
+</html>
